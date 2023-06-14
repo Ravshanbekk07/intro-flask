@@ -18,5 +18,15 @@ def say_hello():
     return f'Hello <b>{name}</b>!'
 
 
+@app.route('/add')
+def add():
+    params = request.args
+    a = params.get('a', 0)
+    b = params.get('b', 0)
+    return {
+        "result": int(a) + int(b)
+    }
+
+
 if __name__ == '__main__':
     app.run(debug=True)
