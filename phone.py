@@ -21,11 +21,11 @@ def brend():
 @app.route('/phones')
 def get_phones():
     params = request.args
-    brend = params.get('brend', None)
+    brend_name = params.get('brend', None)
     if brend != None:
         q = Query()
         return {
-            'phones': phones.search(q.brend == brend)
+            'phones': phones.search(q.brend == brend_name)
         }
     return {
         'phones': phones.all()
