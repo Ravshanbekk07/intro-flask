@@ -2286,5 +2286,11 @@
             "price": 808.1,
             "image": "https://images-na.ssl-images-amazon.com/images/I/61uM7FvCHuL._SL1288_.jpg"
         }
+    },
+    "product": {
+        "1": {
+            "name": "Iphone x",
+            "price": 300
+        }
     }
 }
